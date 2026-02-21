@@ -1,0 +1,186 @@
+@font-face {
+    font-family: 'Samsung Sans Regular';
+    src: url('../webfonts/SamsungSans-Regular.eot');
+    src: url('../webfonts/SamsungSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../webfonts/SamsungSans-Regular.woff2') format('woff2'),
+        url('../webfonts/SamsungSans-Regular.woff') format('woff'),
+        url('../webfonts/SamsungSans-Regular.ttf') format('truetype'),
+        url('../webfonts/SamsungSans-Regular.svg#SamsungSans-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Samsung Sans Bold';
+    src: url('../webfonts/SamsungSans-Bold.eot');
+    src: url('../webfonts/SamsungSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../webfonts/SamsungSans-Bold.woff2') format('woff2'),
+        url('../webfonts/SamsungSans-Bold.woff') format('woff'),
+        url('../webfonts/SamsungSans-Bold.ttf') format('truetype'),
+        url('../webfonts/SamsungSans-Bold.svg#SamsungSans-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+button:focus, input:focus, textarea:focus {
+	outline: 0;
+}
+
+body {
+  background: #1428A0;
+  font-family: 'Samsung Sans Regular';
+  color: #ffffff;
+}
+
+.container {
+	 max-width: 1230px !important;
+}
+
+.samsung_wrapper {
+	padding: 80px 0;
+}
+
+.samsung_wrapper h2 {
+    font-size: 45px;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 30px;
+    font-family: 'Samsung Sans Bold';
+}
+
+.samsung_wrapper h2 span {
+	  color: #ffc600;
+}
+
+.samsung_wrapper .samsung_item {
+	  margin-top: 30px;
+	  background: #ffffff;
+	  border-radius: 8px;
+	  overflow: hidden;
+}
+
+.samsung_wrapper .samsung_item figure {
+	  width: 100%;
+	  height: 100%;
+	  overflow: hidden;
+	  position: relative;
+}
+
+.samsung_wrapper .samsung_item figure img {
+	  width: 100%;
+	  height: 100%;
+	  object-fit: cover;
+	  transition: 0.4s all ease-in-out;
+}
+
+.samsung_wrapper .samsung_item:hover figure img {
+	  transform: scale(1.10);
+}
+
+.samsung_wrapper .samsung_item .samsung_content {
+    padding: 20px;
+}
+
+.samsung_wrapper .samsung_item .samsung_content h3 {
+    font-size: 23px;
+}
+
+.samsung_wrapper .samsung_item .samsung_content h3 a {
+	  color: #000000;
+	  font-family: 'Samsung Sans Bold';
+	  text-decoration: none;
+	  transition: 0.4s all ease-in-out;
+}
+
+.samsung_wrapper .samsung_item .samsung_content h3 a:hover {
+	  color: #1428A0;
+}
+
+.samsung_wrapper .samsung_item .samsung_content p {
+    color: #393838;
+}
+
+.samsung_wrapper .samsung_item .samsung_content .email i {
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    border-radius: 50%;
+    margin-right: 10px;
+    background: #1428A0;
+}
+
+.samsung_wrapper .samsung_item .samsung_content .email {
+	  color: #1428A0;
+	  text-decoration: none;
+}
+
+.samsung_wrapper .samsung_item:hover .social {
+	  visibility: visible;
+	  opacity: 1;
+}
+
+.samsung_wrapper .samsung_item .social {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, rgb(20 40 160 / 9%) 0, rgb(20 40 160 / 15%) 47.81%, rgb(20 40 160 / 45%) 58.9%,  #1428A0 100%);
+    visibility: hidden;
+    opacity: 0;
+}
+
+.samsung_wrapper .samsung_item:hover figure ul {
+	  margin-top: 0;
+	  visibility: visible;
+	  opacity: 1;
+}
+
+.samsung_wrapper .samsung_item figure ul {
+    list-style: none;
+    margin-top: 50px;
+    transition: 0.4s all ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.samsung_wrapper .samsung_item figure ul li {
+	  display: inline-block;
+}
+
+.samsung_wrapper .samsung_item figure ul li a {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 4px;
+    background: #000000;
+    transition: 0.4s all ease-in-out;
+    color: #ffffff;
+    font-size: 16px;
+    border: 1px solid transparent;
+}
+
+.samsung_wrapper .samsung_item figure ul li a:hover {
+	  border: 1px solid #000000;
+	  color: #000000;
+	  background: transparent;
+	  text-decoration: none;
+}
